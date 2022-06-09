@@ -7,39 +7,53 @@
     <title>Landing Page 1</title>
     <link rel="stylesheet" href="output.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a50b36bb17.js" crossorigin="anonymous"></script>
 </head>
-<body class = ' bg-blue-600 sm:bg-gradient-to-r from-blue-800 to-blue-600'>
-    <nav class =  ' w-screen flex justify-between align-center h-16   items-center text-white bg-blue-500 sm:bg-gradient-to-r from-blue-800 to-blue-700 '>
+<body class = 'bg-gradient-to-r from-blue-800 to-blue-600'>
+    <nav class =  ' w-screen flex justify-between align-center h-16   items-center text-white  sm:bg-gradient-to-r from-blue-800 to-blue-700 '>
         <h1 class = ' mx-10 font-bold text-4xl' >tieR</h1>
-        <ul class = 'flex justify-end mx-24 space-x-10'>
-            <li class = 'cursor-pointer' >
-                What we do
-            </li>
-            <li class = 'cursor-pointer'>
-                Blog
-            </li>
-            <li class = 'cursor-pointer'>
-                Podcast
-            </li>
-            <li class = 'cursor-pointer'>
-                Careers
-            </li>
-            <li class = 'cursor-pointer'>
-                Work with us
-            </li>
-        </ul>
+        <div class="nav_elements hidden md:block">
+            <ul class = 'flex justify-end mx-24 space-x-10'>
+                <li class = 'cursor-pointer' >
+                    What we do
+                </li>
+                <li class = 'cursor-pointer'>
+                    Blog
+                </li>
+                <li class = 'cursor-pointer'>
+                    Podcast
+                </li>
+                <li class = 'cursor-pointer'>
+                    Careers
+                </li>
+                <li class = 'cursor-pointer'>
+                    Work with us
+                </li>
+            </ul>
+        </div>
+        <div class="nav_icon block mx-5 my-3 text-2xl md:hidden">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
     </nav>
     <main>
-        <div class = 'container  flex  text-left align-center flex-wrap px-10 py-10 sm:flex-row text-left justify-between align-center px-20 py-32'>
-            <div class=" mainheading  text-white   sm:w-96">
-                <h1 class = ' text-xl font-bold sm:text-3xl'>Unlock your buisness potential with Facebook and Instagram advertising</h1>
+        <div class = 'container  flex   flex-col text-center align-center w-screen  content-center sm:flex-row text-left justify-between align-center pt-32'>
+            <div class=" w-52 mainheading  text-white  text-center  m-auto sm:w-96">
+                <h1 class = ' text-2xl font-bold sm:text-3xl'>Unlock your buisness potential with Facebook and Instagram advertising</h1>
                 <p class = 'my-5'>Facebook premier league Partner Agency</p>
                 <button class="bg-red-500  rounded-3xl px-3 py-2 sm:px-5 py-3">Work with US</button>
             </div>
-            <div class=" w-60 sm:w-80 ">
+            <div class=" w-52 sm:w-80 text-center m-auto ">
                 <img src="./back.png" alt="">
             </div>
-           
+        </div>
+        <div class = 'services_offered text-white text-left mt-10 px-10 sm:px-40  '>
+            <ul class="flex space-x-10 sm:space-x-20">
+                <li class = 'w-32 text-xs font-semibold'><i class="fa-brands fa-facebook text-4xl"></i> <br>Facebook Premier Level Agency Partner</li>
+                <li class = 'w-32 text-xs font-semibold'><i class="fa-brands fa-google  text-4xl"></i> <br> Google Endorsed marketing Partner</li>
+                <li class = 'w-32 text-xs font-semibold'><i class="fa-solid fa-chart-line  text-4xl"></i> <br> Inc 50000 Fastest growing company</li>
+                <li class = 'w-32 text-xs font-semibold'><i class="fa-solid fa-dollar-sign  text-4xl"></i><br>$1000 In Annual ad Digital Spend</li>
+            </ul>
         </div>
     </main>
 </body>
